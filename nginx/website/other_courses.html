@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система дистанционного обучения</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+      <button onclick="location.href='index.html'">Главная</button>
+      <button onclick="location.href='library.html'">Библиотека</button>
+      <button onclick="location.href='courses.html'">Мои курсы</button>
+      <button onclick="location.href='other_courses.html'">Найти курсы</button>
+    </div>
+    <div class="container">
+      <h1>Сохранённые курсы</h1>
+      
+      <div id="saved-course-list">
+      </div>
+        
+        <div id="course-input-container">
+            <h2>Найдите курсы по названию</h2>
+            <input type="text" id="course-name" placeholder="Название">
+            <button id="find-course-btn">Найти</button>
+        </div>
+        <div id="course-list-container" style="display: none;">
+            <h2 id="course-list-header">Найденные курсы:</h2>
+            <div id="course-list"></div>
+        </div>
+    </div>
+  </div>
+  <script src="other_courses.js"></script>
+  </div>
+</body>
+</html>

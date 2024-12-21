@@ -1,0 +1,18 @@
+{
+  "name": "my-node-app",
+  "version": "1.0.0",
+  "description": "Приложение на Node.js для обработки запросов",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "multer": "^1.4.5-lts.1",
+    "form-data": "^4.0.1",
+    "axios": "^1.7.9"
+  },
+  "author": "Ваше Имя",
+  "license": "ISC"
+}

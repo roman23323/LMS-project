@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система дистанционного обучения</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+      <button onclick="location.href='index.html'">Главная</button>
+      <button onclick="location.href='library.html'">Библиотека</button>
+      <button onclick="location.href='courses.html'">Мои курсы</button>
+      <button onclick="location.href='other_courses.html'">Найти курсы</button>
+    </div>
+    <div class="container">
+      <h1>Курсы</h1>
+      
+      <div id="course-list">
+          <p>Нет курсов</p>
+      </div>
+      
+      <button id="add-course-btn">Добавить курс</button>
+        
+        <div id="file-input-container" style="display: none;">
+            <h2>Добавьте файлы в курс</h2>
+            <input type="text" id="file-name" placeholder="Название файла">
+            <button id="add-file-btn">Добавить файл в курс</button>
+        </div>
+
+        <h2 id="files-header" style="display: none;">Добавленные файлы</h2>
+        <div id="file-list"></div>
+        <!-- Поле для ввода названия курса -->
+        <input type="text" id="course-name" placeholder="Название курса" style="display: none;">
+        <!-- Кнопка "Сохранить курс", изначально скрыта -->
+        <button id="save-course-btn" style="display: none;">Сохранить курс</button>
+    </div>
+  </div>
+  <script src="courses.js"></script>
+  </div>
+</body>
+</html>

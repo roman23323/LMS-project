@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Библиотека</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем стили -->
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="location.href='index.html'">Главная</button>
+        <button onclick="location.href='library.html'">Библиотека</button>
+        <button onclick="location.href='courses.html'">Мои курсы</button>
+        <button onclick="location.href='other_courses.html'">Найти курсы</button>
+    </div>
+    
+    <div class="container">
+        <h1>Библиотека</h1>
+        
+        <div class="file-list">
+            <p>Нет загруженных файлов</p>
+        </div>
+        
+        <form id="uploadForm">
+            <input type="file" id="fileInput" name="file" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <script src="library.js"></script>
+</body>
+</html>

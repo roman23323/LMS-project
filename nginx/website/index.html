@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система дистанционного обучения</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+      <button onclick="location.href='index.html'">Главная</button>
+      <button onclick="location.href='library.html'">Библиотека</button>
+      <button onclick="location.href='courses.html'">Мои курсы</button>
+      <button onclick="location.href='other_courses.html'">Найти курсы</button>
+    </div>
+    <h1>Добро пожаловать в систему дистанционного обучения</h1>
+    <div class="button-container">
+      <button id="loginBtn">Войти</button>
+      <button id="registerBtn">Зарегистрироваться</button>
+    </div>
+
+    <div id="formContainer" class="form-container">
+      <div id="loginForm" class="form" style="display: none;">
+        <h2 class="form__header">Форма входа</h2>
+        <input id="auth-login" type="text" placeholder="Логин" required>
+        <input id="auth-password" type="password" placeholder="Пароль" required>
+        <button onclick="submitLogin()">Войти</button>
+        <button onclick="closeForm()">Закрыть</button>
+      </div>
+      <div id="registerForm" class="form" style="display: none;">
+        <h2 class="form__header">Форма регистрации</h2>
+        <input id="reg-name" type="text" placeholder="Имя" required>
+        <input id="reg-login" type="text" placeholder="Логин" required>
+        <input id="reg-password" type="password" placeholder="Пароль" required>
+        <button onclick="submitRegister()">Зарегистрироваться</button>
+        <button onclick="closeForm()">Закрыть</button>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

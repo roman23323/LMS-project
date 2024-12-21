@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #f0f0f0; /* Светло-серый цвет для панели */
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar button {
+  float: left;
+  display: block;
+  color: #333; /* Темно-серый цвет текста для кнопок */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+.navbar button:hover {
+  background-color: #d0d0d0; /* Светло-серый цвет при наведении */
+}
+
+h1 {
+  margin-top: 60px; /* Отступ для топ-бара */
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.form-container button {
+  display: block; /* Вернули вертикальное расположение кнопок формы */
+  margin: 10px auto; /* Центрирование кнопок формы */
+  padding: 10px 20px; /* Размер кнопок */
+  background-color: #add8e6; /* Светло-голубой фон */
+  color: #333; /* Цвет текста */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px; /* Размер шрифта */
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex; /* Используем flexbox для выравнивания */
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  margin-top: 20px; /* Отступ сверху для лучшего размещения */
+}
+
+#loginBtn, #registerBtn {
+  margin: 0 10px; /* Отступ между кнопками */
+  padding: 10px 20px; /* Размер кнопок */
+  background-color: #add8e6; /* Светло-голубой фон */
+  color: #333; /* Цвет текста */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px; /* Размер шрифта */
+  cursor: pointer;
+}
+
+#loginBtn:hover, #registerBtn:hover {
+  background-color: #87ceeb; /* Темнее при наведении */
+}
+
+.form__header {
+  text-align: center; /* Центрирование текста заголовка формы */
+}
+
+.form-container button:hover {
+  background-color: #87ceeb; /* Темнее при наведении */
+}
+
+.form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Библиотека */
+
+.container {
+  margin-top: 60px; /* Отступ сверху, чтобы учесть фиксированную навигационную панель */
+  padding: 20px; /* Отступы внутри контейнера */
+  text-align: center; /* Центрирование текста внутри контейнера */
+}
+
+.file-list {
+  background-color: #e0e0e0; /* Темно-серый цвет для контейнера со списком файлов */
+  padding: 20px; /* Отступы внутри контейнера списков */
+  border-radius: 5px; /* Скругленные углы */
+  margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.add-file-btn {
+  background-color: #e0e0e0; /* Цвет кнопки, совпадающий с цветом контейнера */
+  color: #333; /* Темно-серый цвет текста */
+  padding: 10px 20px; /* Размер кнопки */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Размер шрифта */
+}
+
+.add-file-btn:hover {
+  background-color: #d0d0d0; /* Светлее при наведении */
+}
