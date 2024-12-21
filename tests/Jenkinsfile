@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'docker-compose build' // Сборка образов
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'docker-compose up -d' // Запуск всех контейнеров
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'mocha tests/test.js' // Запуск тестов
+            }
+        }
+        stage('Cleanup') {
+            steps {
+                sh 'docker-compose down' // Остановка и удаление контейнеров
+            }
+        }
+    }
+}
